@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDP Junior | Noyabr Oyi Hisoboti Taqdimoti</title>
+    <!-- Tailwind CSS yuklash -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Umumiy fon va shrift sozlamalari */
+      :root {
+        --primary-bg: #0d2e38; /* To'q Teal (Brend foni) */
+        --secondary-bg: #1a414e; /* Slayd foni */
+        --accent-color: #33b1e8; /* Yorqin Cyan (Brend aksenti) */
+        --text-light: #e5e7eb;
+        --text-dark: #0f172a;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--primary-bg);
+        color: var(--text-light);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        min-height: 100vh;
+      }
+      .slide-container {
+        width: 100%;
+        max-width: 1024px;
+        min-height: 576px; /* 16:9 nisbat uchun standart balandlik */
+        background-color: var(--secondary-bg);
+        border-radius: 12px;
+        box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        border: 2px solid var(--accent-color);
+        margin: 20px 0; /* Slaydlar orasida joy qoldirish */
+      }
+      .header,
+      .footer {
+        background-color: var(--primary-bg);
+        padding: 1rem 2rem;
+        color: var(--text-light);
+        font-size: 0.875rem;
+      }
+      .footer {
+        border-top: 1px solid rgba(51, 177, 232, 0.3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-placeholder {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: var(--accent-color);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: var(--primary-bg);
+        font-size: 1.25rem;
+      }
+      .accent-line {
+        height: 5px;
+        background-color: var(--accent-color);
+        width: 50px;
+        border-radius: 9999px;
+      }
+
+      /* Maxsus metrika stili */
+      .metric-card {
+        background-color: var(--primary-bg);
+        border-radius: 8px;
+        padding: 1.5rem;
+        border-left: 5px solid var(--accent-color);
+        transition: transform 0.2s;
+      }
+      .metric-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(51, 177, 232, 0.3);
+      }
+
+      .highlight-text {
+        color: var(--accent-color);
+        font-weight: 700;
+      }
+
+      /* List stili */
+      .custom-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+      .custom-list li::before {
+        content: "›";
+        position: absolute;
+        left: 0;
+        color: var(--accent-color);
+        font-weight: 900;
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SLAYD 1: SARLAVHA SLAYDI -->
+    <div class="slide-container" id="slide1">
+      <div class="header flex justify-between items-center col-span-full">
+        <div class="flex items-center space-x-2 text-xl font-semibold">
+          <span class="logo-placeholder">P</span>
+          <span>PDP Junior</span>
+        </div>
+        <div class="text-sm">2025-yil Noyabr</div>
+      </div>
+
+      <div
+        class="content flex flex-col justify-center items-center p-12 text-center"
+      >
+        <h1
+          class="text-7xl font-extrabold mb-4 uppercase"
+          style="color: var(--accent-color)"
+        >
+          NOYABR OYI HISOBOTI
+        </h1>
+        <h2 class="text-3xl font-light mb-12">
+          Amalga Oshirilgan Ishlar va Erishilgan Natijalar
+        </h2>
+        <div
+          class="w-1/2 h-0.5"
+          style="background-color: var(--accent-color)"
+        ></div>
+        <p class="text-xl mt-6 font-medium">
+          Maqsad: Aniqlik, lo'ndalik va Professionalizm
+        </p>
+      </div>
+
+      <div class="footer">
+        <span>PDP Junior - Professional Hisobot</span>
+        <span class="font-bold" style="color: var(--accent-color)">1 / 6</span>
+      </div>
+    </div>
+
+    <!-- SLAYD 2: ASOSIY NATIJALAR (SOTUV & FILIALLAR) -->
+    <div class="slide-container" id="slide2">
+      <div class="header flex justify-between items-center col-span-full">
+        <h2 class="text-2xl font-bold">
+          Asosiy Moliyaviy va Kengayish Natijalari
+        </h2>
+        <div class="flex items-center space-x-2">
+          <span class="logo-placeholder text-xs">P</span
+          ><span>Sotuv & Filial Kengayishi</span>
+        </div>
+      </div>
+
+      <div class="content p-10">
+        <div class="grid grid-cols-3 gap-6 mb-8">
+          <div class="metric-card">
+            <p class="text-sm uppercase font-semibold text-gray-400">
+              Sotuv Rejasi Bajarilishi
+            </p>
+            <h3
+              class="text-5xl font-extrabold mt-1"
+              style="color: var(--accent-color)"
+            >
+              114%
+            </h3>
+            <p class="mt-2 text-sm">
+              Belgilangan 131 nafar o'rniga
+              <span class="highlight-text">149 nafar</span> sotuv amalga
+              oshirildi.
+            </p>
+          </div>
+          <div class="metric-card">
+            <p class="text-sm uppercase font-semibold text-gray-400">
+              Yangi Talabalar Soni
+            </p>
+            <h3
+              class="text-5xl font-extrabold mt-1"
+              style="color: var(--accent-color)"
+            >
+              149
+            </h3>
+            <p class="mt-2 text-sm">
+              Sotuv uchun ADS harajati:
+              <span class="highlight-text">47 mln so'm</span>. Xarajat
+              samaradorligi keskin oshdi. (Talaba boshiga 315 ming so'm)
+            </p>
+          </div>
+          <div class="metric-card">
+            <p class="text-sm uppercase font-semibold text-gray-400">
+              Xarajat Samaradorligi
+            </p>
+            <h3
+              class="text-5xl font-extrabold mt-1"
+              style="color: var(--accent-color)"
+            >
+              10X
+            </h3>
+            <p class="mt-2 text-sm">
+              Sotuv xarajati 5 oy oldingi (1mln/talaba) dan
+              <span class="highlight-text">~315 ming so'm/talaba</span> ga
+              tushirildi.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="text-3xl font-bold mb-4 mt-6">Filial Kengayishi</h3>
+        <div class="grid grid-cols-2 gap-6">
+          <div
+            class="metric-card bg-gray-700/30 border-l-4 border-l-yellow-400"
+          >
+            <h4 class="text-xl font-semibold mb-2">Yangi Filial (Bektemir)</h4>
+            <p class="text-sm">
+              Bino topildi, ta'mirlandi va ishga tushirildi.
+              <span class="highlight-text">2 haftada 45 nafar</span> talaba
+              shartnoma asosida qabul qilindi.
+            </p>
+          </div>
+          <div
+            class="metric-card bg-gray-700/30 border-l-4 border-l-yellow-400"
+          >
+            <h4 class="text-xl font-semibold mb-2">Ko'chirish (Yashnaobod)</h4>
+            <p class="text-sm">
+              Sig'im yetishmasligi sababli filial yangi, katta binoga
+              ko'chirildi va ta'mirlandi. Talabalar soni
+              <span class="highlight-text">85 nafarga</span> yetkazildi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>Kengayish va Moliya Natijalari (ADS Harajati ko'rsatilgan)</span>
+        <span class="font-bold" style="color: var(--accent-color)">2 / 6</span>
+      </div>
+    </div>
+
+    <!-- SLAYD 3: MAVJUD TALABALAR SONI -->
+    <div class="slide-container" id="slide3">
+      <div class="header flex justify-between items-center col-span-full">
+        <h2 class="text-2xl font-bold">
+          Mavjud Talabalar Soni (Noyabr Holatiga)
+        </h2>
+        <div class="flex items-center space-x-2">
+          <span class="logo-placeholder text-xs">P</span
+          ><span>O'quvchilar Bazasi</span>
+        </div>
+      </div>
+
+      <div class="content p-10 flex flex-col justify-center items-center">
+        <h3
+          class="text-4xl font-extrabold mb-8"
+          style="color: var(--accent-color)"
+        >
+          Filiallar Kesimida
+        </h3>
+        <div class="grid grid-cols-5 gap-6 w-full max-w-4xl">
+          <!-- Xadra -->
+          <div
+            class="metric-card text-center col-span-2"
+            style="border-left-color: #60a5fa"
+          >
+            <p class="text-sm uppercase font-semibold text-gray-400">
+              Xadra Filiali
+            </p>
+            <h4 class="text-5xl font-extrabold mt-1" style="color: #60a5fa">
+              310
+            </h4>
+            <p class="mt-2 text-xs">Nafar o'quvchi</p>
+          </div>
+          <!-- Sergili -->
+          <div
+            class="metric-card text-center"
+            style="border-left-color: #4ade80"
+          >
+            <p class="text-sm uppercase font-semibold text-gray-400">
+              Sergili Filiali
+            </p>
+            <h4 class="text-4xl font-extrabold mt-1" style="color: #4ade80">
+              91
+            </h4>
+            <p class="mt-2 text-xs">Nafar o'quvchi</p>
+          </div>
+          <!-- Yashnaobod -->
+          <div
+            class="metric-card text-center"
+            style="border-left-color: #facc15"
+          >
+            <p class="text-sm uppercase font-semibold text-gray-400">
+              Yashnaobod Filiali
+            </p>
+            <h4 class="text-4xl font-extrabold mt-1" style="color: #facc15">
+              90
+            </h4>
+            <p class="mt-2 text-xs">Nafar o'quvchi</p>
+          </div>
+          <!-- Bektemir -->
+          <div
+            class="metric-card text-center"
+            style="border-left-color: #fb923c"
+          >
+            <p class="text-sm uppercase font-semibold text-gray-400">
+              Bektemir Filiali
+            </p>
+            <h4 class="text-4xl font-extrabold mt-1" style="color: #fb923c">
+              45
+            </h4>
+            <p class="mt-2 text-xs">Nafar o'quvchi</p>
+          </div>
+          <!-- Chilonzor -->
+          <div
+            class="metric-card text-center"
+            style="border-left-color: #f87171"
+          >
+            <p class="text-sm uppercase font-semibold text-gray-400">
+              Chilonzor Filiali
+            </p>
+            <h4 class="text-4xl font-extrabold mt-1" style="color: #f87171">
+              44
+            </h4>
+            <p class="mt-2 text-xs">Nafar o'quvchi</p>
+          </div>
+        </div>
+        <p class="mt-6 text-lg text-gray-300">
+          Jami talabalar soni:
+          <span class="highlight-text text-3xl font-extrabold">580 nafar</span>
+        </p>
+      </div>
+
+      <div class="footer">
+        <span>O'quvchilar Bazasining Joriy Holati</span>
+        <span class="font-bold" style="color: var(--accent-color)">3 / 6</span>
+      </div>
+    </div>
+
+    <!-- SLAYD 4: MARKETING & TIZIMLASHTIRISH -->
+    <div class="slide-container" id="slide4">
+      <div class="header flex justify-between items-center col-span-full">
+        <h2 class="text-2xl font-bold">
+          Marketing va Ichki Tizimlashtirish Ishlari
+        </h2>
+        <div class="flex items-center space-x-2">
+          <span class="logo-placeholder text-xs">P</span><span>Jarayonlar</span>
+        </div>
+      </div>
+
+      <div class="content p-10 grid grid-cols-2 gap-8">
+        <!-- Marketing -->
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="accent-line"></div>
+            <h3 class="text-3xl font-bold ml-4">Marketing</h3>
+          </div>
+          <ul class="custom-list text-base">
+            <li>
+              <span class="highlight-text">Instagram</span> obunachilari
+              <span class="highlight-text">13.1K dan 14.3K</span> ga o'sdi.
+            </li>
+            <li>
+              Bir oyda <span class="highlight-text">13 ta post</span> va
+              <span class="highlight-text">24 ta stories</span> chiqarildi.
+            </li>
+            <li>
+              30 kunlik umumiy qamrov (oxvat):
+              <span class="highlight-text">3.1 million</span>.
+            </li>
+            <li>
+              <span class="highlight-text">2 ta modul yakuni tadbiri</span>
+              o'tkazilib, 180 dan ortiq ota-onalar qatnashdi.
+            </li>
+            <li>
+              <span class="highlight-text">2 ta TV kanalda</span> (Bolajon,
+              UZB24) PDP Junior ishtirokchilari chiqish qildi.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tizimlashtirish & Kontent -->
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="accent-line"></div>
+            <h3 class="text-3xl font-bold ml-4">Tizimlashtirish & Kontent</h3>
+          </div>
+          <ul class="custom-list text-base">
+            <li>
+              <span class="highlight-text">Sotuv bo'limi qayta qurildi</span>:
+              ROP lavozimi joriy etildi (B.Sayfullayev).
+            </li>
+            <li>
+              <span class="highlight-text">Bitrix24</span> da sotuv voronkalari
+              qayta tahrirlandi.
+            </li>
+            <li>
+              <span class="highlight-text">Bosh Admin</span> lavozimi yaratilib,
+              sinov uchun U.Xalimboyevaga yuklatildi.
+            </li>
+            <li>
+              <span class="highlight-text">ERP</span> da qarzdorlikni
+              avtomatlashtirish tasklari ishlab chiqildi.
+            </li>
+            <li>
+              <span class="highlight-text"
+                >3 ta yo'nalishda Bosh Mentorlar tizimi</span
+              >
+              joriy etildi (Dekabr sinov muddati).
+            </li>
+            <li>
+              <span class="highlight-text">Kontent:</span> 2 ta Frontend va 1 ta
+              Python modul kontentlari yakunlanib, qabul qilindi.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>Marketing Yutuqlari va Ichki Jarayonlar Optimizatsiyasi</span>
+        <span class="font-bold" style="color: var(--accent-color)">4 / 6</span>
+      </div>
+    </div>
+
+    <!-- SLAYD 5: MUAMMOLAR VA TAKLIFLAR -->
+    <div class="slide-container" id="slide5">
+      <div class="header flex justify-between items-center col-span-full">
+        <h2 class="text-2xl font-bold">Muammolar, To'siqlar va Takliflar</h2>
+        <div class="flex items-center space-x-2">
+          <span class="logo-placeholder text-xs">P</span
+          ><span>Keling, hal qilamiz</span>
+        </div>
+      </div>
+
+      <div class="content p-10 grid grid-cols-2 gap-8">
+        <!-- Muammolar & To'siqlar -->
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="accent-line bg-red-500 w-12"></div>
+            <h3 class="text-3xl font-bold ml-4 text-red-400">
+              Asosiy Muammolar
+            </h3>
+          </div>
+          <ul class="custom-list text-base">
+            <li style="--accent-color: #f87171">
+              Chilonzor filialida
+              <span class="highlight-text"
+                >sotuv rejasi bajarilishida sustkashlik</span
+              >
+              (rejadan ortda qolish).
+            </li>
+            <li style="--accent-color: #f87171">
+              Guruhlar ko'payishi sababli tajribali
+              <span class="highlight-text">mentorlar yetishmovchiligi</span>.
+            </li>
+            <li style="--accent-color: #f87171">
+              Tizimlashtirish ishlarida ba'zi
+              <span class="highlight-text">kamchiliklar</span> mavjud.
+            </li>
+            <li style="--accent-color: #f87171">
+              Yangi filiallar ochishda viloyat markazlarida
+              <span class="highlight-text">kadr yetishmovchiligi</span>.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Takliflar -->
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="accent-line bg-green-500 w-12"></div>
+            <h3 class="text-3xl font-bold ml-4 text-green-400">
+              Kelgusi Takliflar
+            </h3>
+          </div>
+          <p class="mb-4 text-gray-300">
+            Shahar chetidagi filiallar sonini ko'paytirish orqali kengayish:
+          </p>
+          <ul class="custom-list text-base">
+            <li style="--accent-color: #4ade80">
+              Keles tumanida filial ochish.
+            </li>
+            <li style="--accent-color: #4ade80">
+              Yangi yo'l shahrida filial ochish.
+            </li>
+            <li style="--accent-color: #4ade80">
+              Olmaliq shahrida filial ochish.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>Xatarlar va Strategik Qarorlar</span>
+        <span class="font-bold" style="color: var(--accent-color)">5 / 6</span>
+      </div>
+    </div>
+
+    <!-- SLAYD 6: DEKABR OYI REJALARI (MAQSADLAR) -->
+    <div class="slide-container" id="slide6">
+      <div class="header flex justify-between items-center col-span-full">
+        <h2 class="text-2xl font-bold">Dekabr Oyi Maqsadlari va Rejalari</h2>
+        <div class="flex items-center space-x-2">
+          <span class="logo-placeholder text-xs">P</span
+          ><span>Kelgusi Maqsadlar</span>
+        </div>
+      </div>
+
+      <div class="content p-10">
+        <div class="flex items-center mb-6">
+          <div class="accent-line w-full"></div>
+          <h3
+            class="text-4xl font-extrabold ml-4 whitespace-nowrap"
+            style="color: var(--accent-color)"
+          >
+            Aniqlangan Raqamlar (Kutilayotgan Natijalar)
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Filial Maqsadlari -->
+          <div class="col-span-1 metric-card border-l-4 border-l-yellow-400">
+            <h4 class="text-xl font-semibold mb-3">
+              O'quvchilar soni bo'yicha filial maqsadlari
+            </h4>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li><span class="highlight-text">Xadra:</span> 350+ nafar</li>
+              <li><span class="highlight-text">Yashnaobod:</span> 120 nafar</li>
+              <li><span class="highlight-text">Sergili:</span> 100+ nafar</li>
+              <li><span class="highlight-text">Bektemir:</span> 70+ nafar</li>
+              <li><span class="highlight-text">Chilonzor:</span> 60+ nafar</li>
+            </ul>
+          </div>
+
+          <!-- Marketing & Kadrlar -->
+          <div class="col-span-1 metric-card border-l-4 border-l-blue-400">
+            <h4 class="text-xl font-semibold mb-3">Marketing va Kadrlar</h4>
+            <ul class="custom-list text-base space-y-1">
+              <li style="--accent-color: #60a5fa">
+                Instagramda
+                <span class="highlight-text">15K dan oshiq</span> obunachi.
+              </li>
+              <li style="--accent-color: #60a5fa">
+                Jami
+                <span class="highlight-text">15 nafar yangi mentor</span> topish
+                va tayyorlash.
+              </li>
+              <li style="--accent-color: #60a5fa">
+                Bosh mentorlar tizimini muvaffaqiyatli sinovdan o'tkazish.
+              </li>
+            </ul>
+            <h4 class="text-xl font-semibold mb-3 mt-4">Tizim va Kontent</h4>
+            <ul class="custom-list text-base space-y-1">
+              <li style="--accent-color: #60a5fa">
+                Qarzdorlik bo'yicha ishlarni
+                <span class="highlight-text">avtomatlashtirish</span>.
+              </li>
+              <li style="--accent-color: #60a5fa">
+                Robotexnika va Frontend yo'nalishida 1 modul kontentlarini
+                <span class="highlight-text">tayyor qilish</span>.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bosh Mentor Vazifalari (Xulosa) -->
+          <div class="col-span-1 metric-card border-l-4 border-l-purple-400">
+            <h4 class="text-xl font-semibold mb-3">
+              Bosh Mentor Vazifalari (Fokus)
+            </h4>
+            <p class="text-sm font-light italic mb-3">
+              Dekabrda Bosh mentorlar tizimining muvaffaqiyati quyidagilar bilan
+              belgilanadi:
+            </p>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>Kontent sifati bir xilligini ta'minlash.</li>
+              <li>
+                Aniqlangan qadamlardan iborat zamonaviy kontent ishlab chiqish.
+              </li>
+              <li>Musobaqalar uchun tayyorlangan guruhlarni boshqarish.</li>
+              <li>Mentorlarning sifat darajasini doimiy nazorat qilish.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>Kelgusi Oy uchun Aniq va O'lchanadigan Maqsadlar</span>
+        <span class="font-bold" style="color: var(--accent-color)">6 / 6</span>
+      </div>
+    </div>
+  </body>
+</html>
